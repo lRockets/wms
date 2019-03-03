@@ -1,6 +1,4 @@
-# lazy
 
-> 测试lazy加载
 
 ## Build Setup
 
