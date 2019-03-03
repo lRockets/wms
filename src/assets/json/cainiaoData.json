@@ -1,0 +1,14 @@
+{
+	"template": "",
+	"ver": 1,
+	"Tables": [{
+		"Name": "OneToOne",
+		"Cols": [{
+			"type": "str",
+			"size": 30,
+			"name": "logcompNumber",
+			"required": false
+		}],
+		"Data": []
+    }]
+}

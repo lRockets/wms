@@ -1,0 +1,64 @@
+@import './mixin.scss';
+
+/* 波次拣货中的标签样式
+-------------------------- */
+.tag-wavepick{
+    li{
+        display: flex;
+        @include flexCenter;
+        @include wh(32px,32px);
+        border-radius: 100%;
+        border: solid 1px #e9e9e9;
+        span{
+            font-size: 12px;
+        }
+        &.expActive{
+            color: $orange-a356;
+            border:1px solid $orange-a356;
+        }
+        &.billActive{
+            color: $green-d2a2;
+            border:1px solid $green-d2a2;
+        }
+    }
+}
+.tag-wavepick--three{
+    @include fd(row);
+    justify-content: space-between;
+    padding:10px 0;
+}
+.tag-wavepick--two{
+    @include fd(row);
+    justify-content: flex-start;
+    padding:10px 0;
+    li{
+        margin-right: 10px;
+    }
+}
+
+.textOverFlow{
+    @include textOverFlow;
+}
+
+.noData{
+    @include fd(column);
+    @include flexCenter;
+    @include wh(100%,200px);
+    .noData-img{
+        @include wh(100px,160px);
+        background: center center url('~@/assets/images/empty.png')  no-repeat;
+    }
+    p{
+        @include sc(14px,$black-333);
+    }
+}
+
+.wrap-img{
+    padding: 5px 0;
+    display: flex;
+    @include flexCenter;
+    img{
+      width: 33px;
+      height: 35px;
+    }
+  }

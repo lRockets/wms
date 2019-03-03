@@ -1,0 +1,120 @@
+/***** red *****/
+
+/***** green *****/
+$green-d2a2:#00d2a2;
+
+/***** gray *****/
+$gray-666: #666666;
+$gray-999: #999999;
+/***** orange *****/
+$orange-a356:#fea356;
+/***** black *****/
+$black-333: #333333;
+/***** blue *****/
+$blue-b9fe:#39b9fe;
+/***** datetime *****/
+
+
+@mixin fd($direction){
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin flex1{
+  display: flex;
+  flex:1;
+}
+
+@mixin flexCenter {
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin wh($width, $height){
+  width: $width;
+  height: $height;
+}
+
+@mixin sc($size, $color){
+  font-size: $size;/*px*/
+  @if $color != 'none'{
+    color: $color;
+  }
+}
+
+@mixin textMiddle($lineHeight){
+  text-align: center;
+  line-height: $lineHeight;
+}
+
+@mixin textOverFlow{
+  min-width: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin pat {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin pal {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/****** 1px ******/
+@mixin setTopLine($c: #C7C7C7) {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  height: 1px;/*no*/
+  border-top: 1px solid $c;/*no*/
+  color: $c;
+  transform-origin: 0 0;
+  transform: scaleY(0.5);
+}
+
+@mixin setBottomLine($c: #C7C7C7) {
+  content: " ";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1px;/*no*/
+  border-bottom: 1px solid $c;/*no*/
+  color: $c;
+  transform-origin: 0 100%;
+  transform: scaleY(0.5);
+}
+
+@mixin setLeftLine($c: #C7C7C7) {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;/*no*/
+  bottom: 0;
+  border-left: 1px solid $c;/*no*/
+  color: $c;
+  transform-origin: 0 0;
+  transform: scaleX(0.5);
+}
+
+@mixin setRightLine($c: #C7C7C7) {
+  content: " ";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 1px;/*no*/
+  bottom: 0;
+  border-right: 1px solid $c;/*no*/
+  color: $c;
+  transform-origin: 100% 0;
+  transform: scaleX(0.5);
+}

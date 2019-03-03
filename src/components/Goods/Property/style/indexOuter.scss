@@ -1,0 +1,38 @@
+.goodsProps-list__wrap{
+    .el-checkbox-button__inner{
+        border: 1px solid #dcdfe6;
+        border-radius: 5px !important;
+    }
+    .custom-props{
+        .el-button{
+            margin-right:20px;
+            &.active{
+                background-color:#39b9fe;
+                .el-tag{
+                    color:#fff;
+                    .el-icon-close{
+                        color:#fff;
+                        &:hover{
+                            background-color:#fff;
+                            color:#409EFF;
+                        }
+                    }
+                }
+            }
+        }
+        .el-button+.el-button{
+            margin-left:0;
+        }
+    }
+}
+
+.formProps{
+    .tbody{
+        .el-input__inner{
+            text-align: center;
+        }
+        .el-form-item__error{
+            padding-top: 0px;
+        }
+    }
+}
